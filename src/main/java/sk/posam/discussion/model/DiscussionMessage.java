@@ -2,6 +2,7 @@ package sk.posam.discussion.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Objects;
 
@@ -32,5 +33,26 @@ public class DiscussionMessage {
 		this.created = new Date();
 		children = new ArrayList();
 	}
+	
+	void addChild( DiscussionMessage child ) {
+		children.add(child);
+		child.setParent(this);
+	}
+
+	private void setParent(DiscussionMessage parent) {
+		this.parent = parent;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public Collection<DiscussionMessage> getChildren() {
+		return Collections.unmodifiableCollection( children );
+	}
+	public DiscussionMessage getParent() {
+		return parent;
+	}
+
 
 }
