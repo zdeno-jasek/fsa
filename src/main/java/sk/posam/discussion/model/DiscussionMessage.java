@@ -34,25 +34,8 @@ public class DiscussionMessage {
 		children = new ArrayList();
 	}
 	
-	void addChild( DiscussionMessage child ) {
-		children.add(child);
-		child.setParent(this);
-	}
-
-	private void setParent(DiscussionMessage parent) {
-		this.parent = parent;
-	}
-	
 	public String getName() {
 		return name;
 	}
-	
-	public Collection<DiscussionMessage> getChildren() {
-		return Collections.unmodifiableCollection( children );
-	}
-	public DiscussionMessage getParent() {
-		return parent;
-	}
-
 
 }
