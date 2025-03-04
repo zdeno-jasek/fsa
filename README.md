@@ -2,7 +2,7 @@ Zadanie od zákazníka
 Naša univerzita by potrebovala systém, v ktorom študenti môžu klásť otázky profesorom k predmetom na verejne dostupnom fóre. Odpovedať na otázky môžu ako profesori, tak aj samotní študenti medzi sebou. V otázkach a odpovediach by mohol systém vedieť automaticky vyhľadávať, aby sa študenti nemuseli pýtať stále na to isté. Prístup študentov môže byť anonymný. Diskusia by mala byť členená po predmetoch. V odpovedi sa môže vyskytnúť odkaz alebo príloha.
 
 Zber požiadaviek
-|RQ01|Systém umožní zapísať otázku.|
+RQ01  Systém umožní zapísať otázku.
 RQ02	Systém vie k položenej otázke zaevidovať jednu alebo viac odpovedí.
 RQ03	Systém viaže otázky a odpovede vždy k práve jednému predmetu.
 RQ04	Systém umožní notifikovať používateľov priradených k predmetu (vyučujúci), ktorí sú zodpovední za zodpovedanie otázky.
@@ -20,6 +20,7 @@ Systém umožní vyučujúcemu označiť dobrú a výstižnú študentovu odpove
 RQ14	Systém zabezpečí navýšenie bodov v kreditnom systéme za dobrú a výstižnú odpoveď.
 RQ15	Systém umožní poslať otázku aj mailom.
 RQ16	Systém umožní vyučujúcemu označiť nesprávnu odpoveď študenta.
+
 Slovník pojmov
 Predmet	Course	Vymedzená oblasť, ktorej sa bude týkať diskusia. Zodpovedá predmetu výučby.
 Vyučujúci	Teacher	Expert v oblasti daného predmetu. Jeden predmet môže mať viacerých vyučujúcich a jeden vyučujúci môže vyučovať viacero predmetov.
